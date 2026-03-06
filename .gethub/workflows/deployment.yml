@@ -1,0 +1,12 @@
+name: Deploy Project
+on: [push, workflow_dispatch]
+jobs:
+  test:
+    runs-on: unbuntu-latest
+    steps:
+      - name: echo "testing..."
+  deploy:
+    needs: test
+    runs-on: unbuntu-latest
+    steps:
+      - name: echo "Deploying"
