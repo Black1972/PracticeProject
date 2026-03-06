@@ -4,9 +4,11 @@ jobs:
   test:
     runs-on: unbuntu-latest
     steps:
-      - name: echo "testing..."
+      - name: testing
+        run: echo "testing..."
   deploy:
     needs: test
     runs-on: unbuntu-latest
     steps:
-      - name: echo "Deploying"
+      - name: deploying
+        run: echo "Deploying"
